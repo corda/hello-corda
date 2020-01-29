@@ -2,37 +2,15 @@
 
 # Hello Corda!
 
-This repo is an short introduction to the two day Corda training course. The instructional powerpoint that goes along with this content can be found here: https://github.com/corda/corda-training-materials/blob/master/Cordapp%20Development%20Module.pdf
+This repo is an short introduction to the two day Corda training course. The instructional powerpoint that goes along with this content can be found here: https://github.com/corda/hello-corda/blob/master/Hello_Corda.pdf
 
 This repository is currently only available in Java.
-
-Solutions are available here: https://github.com/corda/corda-training-solutions
-
-
-# Setup
-
-### Tools 
-* JDK 1.8 latest version
-* IntelliJ latest version (2017.1 or newer)
-* git
-
-After installing the required tools, clone or download a zip of this repository, and place it in your desired 
-location.
-
-### IntelliJ setup
-* From the main menu, click `open` (not `import`!) then navigate to where you placed this repository.
-* Click `File->Project Structure`, and set the `Project SDK` to be the JDK you downloaded (by clicking `new` and 
-nagivating to where the JDK was installed). Click `Okay`.
-* Next, click `import` on the `Import Gradle Project` popup, leaving all options as they are. 
-* If you do not see the popup: Navigate back to `Project Structure->Modules`, clicking the `+ -> Import` button,
-navigate to and select the repository folder, select `Gradle` from the next menu, and finally click `Okay`, 
-again leaving all options as they are.
 
 # Instructions
 Once you are all set up, you can start expanding on the class templates.
 In order to send custom messages using this CorDapp - You will first fix `MessageState`, then `MessageFlow`, and lastly `MessageContract`.
 There is a comment above each class that explains the change that needs to be done.
-For more details follow the intructional powerpoint that can be found here: https://github.com/corda/corda-training-materials/blob/master/Cordapp%20Development%20Module.pdf. 
+For more details follow the intructional powerpoint "Hello_Corda.pdf" within this git repository.
 
 ### Running the tests
 * Select `Baseline Test - Java` from the dropdown run configuration menu, and click the green play button.
