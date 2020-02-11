@@ -2,7 +2,7 @@
 
 # Hello Corda!
 
-This repo is an short introduction to the two day Corda training course. The instructional powerpoint that goes along with this content can be found here: https://github.com/corda/hello-corda/blob/master/Hello_Corda.pdf
+This repo is an short introduction to the two day Corda training course. The instructional powerpoint that goes along with this content can be found here: https://github.com/corda/hello-corda/blob/master/HelloCorda.pdf
 
 This repository is currently only available in Java.
 
