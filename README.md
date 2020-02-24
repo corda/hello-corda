@@ -10,7 +10,7 @@ This repository is currently only available in Java.
 Once you are all set up, you can start expanding on the class templates.
 In order to send custom messages using this CorDapp - You will first fix `MessageState`, then `MessageFlow`, and lastly `MessageContract`.
 There is a comment above each class that explains the change that needs to be done.
-For more details follow the intructional powerpoint "Hello_Corda.pdf" within this git repository.
+For more details follow the intructional powerpoint "HelloCorda.pdf" within this git repository.
 
 ### Running the tests
 * Select `Baseline Test - Java` from the dropdown run configuration menu, and click the green play button.
