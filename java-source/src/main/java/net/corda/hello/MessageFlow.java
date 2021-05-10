@@ -24,8 +24,10 @@ public class MessageFlow {
     public static class Initiator extends FlowLogic<SignedTransaction> {
 
         private final Party target;
-        public Initiator(Party target) {
+        private final String content;
+        public Initiator(Party target, String content) {
             this.target = target;
+            this.content = content;
         }
 
         @Suspendable
@@ -36,7 +38,7 @@ public class MessageFlow {
             final Party notary = getServiceHub().getNetworkMapCache().getNotaryIdentities().get(0);
 
             // Step #2: Create transaction items
-            final MessageState state = new MessageState(origin, target);
+            final MessageState state = new MessageState(origin, target, content);
             final Command<SendMessage> command = new Command<>(new SendMessage(), ImmutableList.of(origin.getOwningKey()));
             final StateAndContract stateAndContract = new StateAndContract(state, MessageContract.ID);
 

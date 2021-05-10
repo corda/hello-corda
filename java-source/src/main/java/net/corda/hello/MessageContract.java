@@ -26,6 +26,7 @@ public class MessageContract implements Contract {
             final MessageState outputState = tx.outputsOfType(MessageState.class).get(0);
             require.using("The party sending the message must sign the SendMessage transaction.",
                     (command.getSigners().equals(Collections.singletonList(outputState.origin.getOwningKey()))));
+            require.using("The content cannot be an empty String.", !outputState.content.isEmpty());
             return null;
         });
     }

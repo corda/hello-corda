@@ -17,9 +17,11 @@ import java.util.List;
 public class MessageState implements ContractState {
     public final Party origin;
     public final Party target;
-    public MessageState(Party origin, Party target) {
+    public final String content;
+    public MessageState(Party origin, Party target, String content) {
         this.origin = origin;
         this.target = target;
+        this.content = content;
     }
     @Override
     public List<AbstractParty> getParticipants() {

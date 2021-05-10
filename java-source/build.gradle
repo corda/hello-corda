@@ -2,9 +2,10 @@ repositories {
     mavenLocal()
     jcenter()
     mavenCentral()
-    maven { url 'https://dl.bintray.com/kotlin/exposed' }
     maven { url 'https://jitpack.io' }
-    maven { url 'https://ci-artifactory.corda.r3cev.com/artifactory/corda-releases' }
+    maven { url 'https://software.r3.com/artifactory/corda' }
+    maven { url 'https://repo.gradle.org/gradle/libs-releases' }
+
 }
 
 apply plugin: 'java'
@@ -36,7 +37,6 @@ dependencies {
 
     testCompile "$corda_release_distribution:corda-test-utils:$corda_release_version"
     testCompile "$corda_release_distribution:corda-node-driver:$corda_release_version"
-
 }
 
 tasks.withType(JavaCompile) {

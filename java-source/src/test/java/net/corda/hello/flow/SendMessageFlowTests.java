@@ -3,7 +3,7 @@ package net.corda.hello.flow;
 import net.corda.core.identity.CordaX500Name;
 import net.corda.testing.node.*;
 import java.util.*;
-import net.corda.hello.MessageFlow;
+import net.corda.hello.*;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 
